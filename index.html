@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+   		<link rel='stylesheet' type='text/css' href='index.css'/>
+    	<script type="text/javascript">
+    		function focuselement(){
+    			document.getElementById("googleBar").focus();
+    		}
+    	</script>
+	</head>
+	
+	<body id="body" onload="focuselement()">
+		
+		<script>
+			function changebackground(){
+				console.log("hello");
+				document.getElementById("body").style.background = 'http://img08.deviantart.net/0438/i/2009/206/3/1/copland_os_wallpaper_by_pocket7878.png';
+			}
+		</script>
+		<div id='hello'>
+			<div id='clickme' onclick="changebackground();"><p>Hello Navi</p></div>
+		</div>
+		<div class='favorites'>
+			<div class='list fav-dev'>
+				<p>CompSci</p>
+					<ul>
+						<li><a target="_self" href='http://www.stackoverflow.com'>Stack Overflow</a></li>
+						<li><a target="_self" href='http://www.reddit.com/r/dailyprogrammer'>/r/dailyprogrammer</a></li>
+						<li><a target="_self" href='http://www.darkreading.com'>Dark Reading</a></li>
+						<li><a target="_self" href='http://www.rexegg.com'>Rexegg</a></li>
+						<li><a target="_self" href='http://www.github.com'>GitHub</a></li>
+					</ul>
+				</div>
+				
+				<div class='list fav-ent'>
+					<p>Entertainment</p>
+					<ul>	
+						<li><a target="_self" href='https://www.soundcloud.com'>SoundCloud</a></li>
+						<li><a target="_self" href='https://www.youtube.com'>YouTube</a></li>
+						<li><a target="_self" href='http://www.4chan.org/g/'>halfchan</a></li>
+						<li><a target="_self" href='http://www.8chan.co/tech/'>infinitychan</a></li>
+						<li><a target="_self" href='http://www.lainchan.org/'>soykafchan</a></li>
+					</ul>
+				</div>
+	
+				<div class='list fav-shop'>
+					<p>Utility</p>
+					<ul>
+						<li><a target="_self" href='http://getpocket.com/a/queue/'>Pocket</a></li>
+						<li><a target="_self" href='http://web.airdroid.com'>AirDroid</a></li>
+					</ul>
+				</div>
+			</div>
+		
+		<div class='bottombar'>
+		
+			<p><a target="_self" href='https://www.reddit.com'>Reddit</a></p>
+			<p><a target="_self" href='http://www.facebook.com'>Facebook</a></p>
+			<p><a target="_self" href='http://mail.google.com'>Gmail</a></p>
+			<form method="get" action="http://www.duckduckgo.com">
+				<div style="width:100%; margin:0 auto;">
+					<input type="text" name="q" id="googleBar" maxlength="100" autofocus="autofocus" placeholder="Search the botnet..." onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue; "/>
+					<br>
+					<input type="submit"  frameborder="0" style="visibility:hidden; height:0%; width:0%;"/>
+				</div>
+			</form>	
+			<p><a target="_self" href='more.html'>More</a></p>
+
+		</div>
+		
+
+	</body>
+</html>
